@@ -17,8 +17,7 @@ test('renderTool renders a div with tool details', (expect) => {
         name: 'Spade',
         dig: 7, 
         durability: 9, 
-        image: './assets/shovel.jpg', 
-        perks: ['Easy to use', 'Versatile', 'Decent at killing zombies']
+        image: './assets/shovel.jpg'
     };
     const actual = renderTool(Spade);
 

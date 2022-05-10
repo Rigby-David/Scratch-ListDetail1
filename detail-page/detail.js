@@ -1,5 +1,5 @@
 import { tools } from '../tools.js';
-import { findById } from '../utils.js';
+import { findById } from '../render-data-utils.js';
 
 const toolName = document.getElementById('tool-name');
 const toolImage = document.getElementById('tool-image');
