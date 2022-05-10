@@ -13,6 +13,7 @@ test('renderTool renders a div with tool details', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const Spade = {
+        id: '1',
         name: 'Spade',
         dig: 7, 
         durability: 9, 

@@ -2,6 +2,9 @@ export function renderTool(tool) {
     const div = document.createElement('div');
     div.classList.add('tool');
 
+    const a = document.createElement('a');
+    a.href = `./tools/?id=${tool.id}`;
+
     const img = document.createElement('img');
     img.src = tool.image;
 
@@ -21,6 +24,7 @@ export function renderTool(tool) {
         ul.append(li);
     }
 
-    div.append(img, h1, p, h2, ul);
+    a.append(img, h1, p, h2, ul);
+    div.append(a);
     return div;
 }
