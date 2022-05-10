@@ -1,25 +1,19 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-
-import { renderTool } from '../render-utils';
+import { tools } from '../tools.js';
+import { renderTool } from '../render-data-utils.js';
 
 const test = QUnit.test;
 
-test('renderTool renders a div with tool details', (expect) => {
+test('renderTool for home page items', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class="tool"><img src="./assets/shovel.jpg"><h1>Spade</h1><p>The Spade has a digging factor of 7 and a durability factor of 9</p><h2>Perks</h2><ul><li>Easy to use</li><li>Versatile</li><li>Decent at killing zombies</li></ul></div>`;
+    const expected = `<a class="tool" href="./detail-page/index.html?id=1"><div><img src="./assets/shovel.jpg"><p>Spade 7 9</p></div></a>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const Spade = {
-        id: '1',
-        name: 'Spade',
-        dig: 7, 
-        durability: 9, 
-        image: './assets/shovel.jpg'
-    };
-    const actual = renderTool(Spade);
+    
+    const actual = renderTool(tools[0]);
 
     //Expect
     // Make assertions about what is expected versus the actual result

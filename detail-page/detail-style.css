@@ -1,0 +1,7 @@
+body {
+    background-image: url(../assets/tool.jpg);
+}
+
+.tool img {
+    width: 10px;
+}
