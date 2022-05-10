@@ -41,6 +41,8 @@ export function renderTool(tool) {
 
     textEl.textContent = `${tool.name} ${tool.dig} ${tool.durability}`;
 
+    newEl.href = `./detail-page/index.html?id=${tool.id}`;
+
     toolDiv.append(imageEl, textEl);
 
     newEl.append(toolDiv);
